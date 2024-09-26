@@ -34,7 +34,7 @@ adb shell rm -Rf /sdcard/haps/
 echo sending .hap to device
 adb push entry-default-signed.hap %hapPath%
 
-echo opening DevEco studio
+echo launching DevEco Assistant on phone 
 adb shell am start -n com.huawei.deveco.assistant/.activity.StartUpActivity
 
 timeout /t 4
